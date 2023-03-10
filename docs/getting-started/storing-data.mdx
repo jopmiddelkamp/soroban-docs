@@ -80,7 +80,7 @@ const COUNTER: Symbol = symbol!("COUNTER");
 
 ### Contract Data Access
 
-The `Env` `data()` function is used to retrieve access and update a counter. The executing contract is the only contract that can query or modify contract data that it has stored. The data stored is viewable on ledger anywhere the ledger is viewable, but contracts executing within the Soroban environment are restricted to their own data.
+The `Env` `storage()` function is used to retrieve access and update a counter. The executing contract is the only contract that can query or modify contract data that it has stored. The data stored is viewable on ledger anywhere the ledger is viewable, but contracts executing within the Soroban environment are restricted to their own data.
 
 The `get()` function gets the current value associated with the counter key.
 
